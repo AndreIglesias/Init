@@ -1,0 +1,7 @@
+# Expliquez comment se connecter en tant que ce nouvelle utilisateur. (En session graphique et en session ssh)
+
+Graphique
+	login et mot de passe via GUI quand demandé
+SSH
+	ssh <usrname>@<ip>
+	Taper le mot de passe

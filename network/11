@@ -1,0 +1,3 @@
+# Trouvez grâce au résultat de la commande précédente le nom et l’IP du matériel qui fait le lien entre vous (réseau local) et l’extérieur
+
+la premiere et troisieme ligne sont l'adresse IP locale et publique, respectivement, la deuxieme est le NAT routeur (nat-1) qui remappe l'adresse locale a l'adresse publique (dc3).

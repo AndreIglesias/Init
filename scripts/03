@@ -1,0 +1,42 @@
+#!/bin/sh
+# Jamais 2 sans 3.
+# Réalise un script de ton choix.
+# La qualité de ton script, devant ton évaluateur tu soutiendras.
+
+DATE=.date
+if test -f "$DATE";
+then
+   echo "Hi again man! ;)"
+else
+	echo "Welcome to the bf savior B)"
+	read -p "What's your love's email? " email;
+	echo "$email" > .email
+	touch .date
+fi
+
+date +%D > .a;
+cat .date > .b;
+
+DIFF=$(diff .a .b);
+
+if [ "$DIFF" != "" ]
+then
+	email=$(cat .email)
+	read -p "Subject: " answer;
+	date +%D > .date;
+
+	echo "
+Hi bae, what's up?
+
+
+
+love u
+" > .message;
+
+	emacs .message;
+
+	cat .message | mutt -s "$answer" "$email";
+	echo "mutt -s ... to $email";
+else
+	echo "Already greet your girl! ;)";
+fi

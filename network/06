@@ -1,0 +1,5 @@
+# Récupérez le path complet du fichier dans lequel est écrit l’adresse IP du serveur DNS que vous utili
+
+/var/run/resolv.conf
+
+# (on peut confirmer DNS avec: scutil --dns | grep 'nameserver\[[0-9]*\]' | sort | uniq | awk '{print $3}')

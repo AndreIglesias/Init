@@ -1,0 +1,5 @@
+#!/bin/sh
+# Réalisez un script qui permet de supprimer un userLOGUÉsur la machine
+USER=$1
+pgrep -u $USER | while read PID; do sudo kill $PID; done
+sudo userdel $USER

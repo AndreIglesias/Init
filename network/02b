@@ -1,0 +1,3 @@
+# Indiquez toutes les adresses IP qui font partie du même sous-réseau
+
+arp -a

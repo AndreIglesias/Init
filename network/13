@@ -1,0 +1,4 @@
+# Grâce a la question précédente et au reverse DNS retrouvez le nom de votrest
+# for OUT in $(ipconfig getifaddr en0); do nslookup $OUT | grep name | awk '{print $4}' | sed 's/.$//'; done
+
+e3r7p20.42.fr
